@@ -1,0 +1,25 @@
+{
+  "name": "festival",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "homepage": "https://github.com/ADavidOli/festival-musica#readme",
+  "bugs": {
+    "url": "https://github.com/ADavidOli/festival-musica/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ADavidOli/festival-musica.git"
+  },
+  "license": "ISC",
+  "author": "David Olivo @ADavidOli",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

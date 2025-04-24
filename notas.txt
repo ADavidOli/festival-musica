@@ -1,0 +1,12 @@
+el archivo packaje.json es para gestionar las dependencias y de más
+fundamental en proyectos basados en nodejs y se utiliza para almacenar metadatos relevantes sobre el proyecto.
+este archivo se encuentra en la raiz del proyecto.
+    gestiona dependencias: es decir enumera todas las dependencias del proyecto, 
+    tanto las de produccion (dependencies) como las de desarrollo (devDependencies). 
+    esto permite que cualquiera que clone el proyecto pueda instalarlas facilmente con npm install.
+    
+    scripts: permite definir scripts personalizados bajo la clave scripts que se pueden ejecutar con npm run <script name>.
+    estos scripts pueden incluir comandos para iniciar el servidor, compilar el codigo, ejecutar pruebas y más.
+    esto proporciona una manera conveniente de automatizar tareas comunes del proyecto.
+    
+    se crea con npm init
