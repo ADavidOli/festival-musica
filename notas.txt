@@ -10,3 +10,10 @@ este archivo se encuentra en la raiz del proyecto.
     esto proporciona una manera conveniente de automatizar tareas comunes del proyecto.
     
     se crea con npm init
+    este archivo es importante porque almacena que dependencias requiere un proyecto pero tambien sus versiones
+
+
+    la carpeta de nodemodules es la carpeta donde están las dependencias de nuestro proyecto.usualmente esa carpeta no se sube a un hosting
+    SASS no se requiere como una dependecia de proyecto sino como una dependecia del DESARROLLO DEL PROYECTO.
+    para ello 
+    npm i --save-dev sass
