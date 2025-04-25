@@ -1,3 +1,2 @@
-body{
-    background-color: red;
-}
+// recuerda todos los cambios son en sass, y no modificar el archivo cs
+@forward 'base';
