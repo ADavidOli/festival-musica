@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as mx;
+
+.header{
+    background-color: v.$verde;
+    // agregando mixins con content.
+    //el content es para poder inyectar directamente el codigo para diferentes dispositivos
+    
+    .contenido-header{
+        padding: 2rem;
+        @include mx.tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    
+    h1{
+        color: v.$blanco;
+        text-align: center;
+        @include mx.tablet{
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include mx.tablet{
+        flex-direction: row;
+    }
+    a{
+        color: v.$blanco;
+        font-size: 2.4rem;
+    
+        &:hover{
+            color: v.$amarillo;
+        }
+    }
+}
