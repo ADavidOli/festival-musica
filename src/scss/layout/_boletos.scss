@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as mix;
+
+.contenedor-boletos{
+    background-color: v.$verde;
+    h3{
+        color: v.$blanco;
+    }
+    .boletos{
+        @include mix.contenedor;
+        @include mix.tablet{
+            @include mix.grid(2);
+        }  
+    }
+}
+
+.pase{
+    .pase-nombre{
+        font-size: 3.3rem;
+        font-weight: 900;
+        text-align: center;
+        color: v.$blanco;
+    }
+}
