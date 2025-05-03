@@ -1,2 +1,1 @@
-import './modules/galeria.js';
-import './modules/navegation.js';
+import"./modules/galeria.js";import"./modules/navegation.js";

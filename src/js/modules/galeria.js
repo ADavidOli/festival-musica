@@ -8,8 +8,12 @@ function CrearGaleria(){
     const cantidadImagenes= 16;
     for (let i = 1; i<=cantidadImagenes; i++){
         const imagen = document.createElement('IMG')
-        imagen.src = `src/img/gallery/full/${i}.jpg`
+        imagen.loading = "lazy"
+        imagen.width = "300"
+        imagen.height = "200"
+        imagen.src = `img/gallery/full/${i}.jpg`
         imagen.alt = 'Imagen de Galeria'
+       
 
         //Event Handler->el proceso de detectar y responder el estado del usuario
         imagen.onclick = function(){
@@ -23,7 +27,7 @@ function CrearGaleria(){
 function mostrarImagen(i){
     //cargamos imagenes
     const imagen = document.createElement('IMG')
-    imagen.src = `src/img/gallery/full/${i}.jpg`
+    imagen.src = `img/gallery/full/${i}.jpg`
     imagen.alt = 'Imagen de Galeria'
     // generar modal
     const modal = document.createElement('DIV');
