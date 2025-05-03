@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as mix;
+
+.galeria{
+    @include mix.contenedor;
+    &-imagenes{
+        @include mix.grid(1, 2rem);
+        @include mix.telefono{
+            @include mix.grid(2, 2rem)
+        }
+        @include mix.tablet{
+            @include mix.grid(3, 2rem)
+        }
+        @include mix.desktop{
+            @include mix.grid(4, 2rem)
+        }
+        img{
+            height: 20rem;
+            object-fit: cover;
+        }
+
+    }
+}
+.modal{
+    position: fixed;
+    inset: 0;
+
+    background-color: rgb(v.$negro, 0.5);
+
+    place-items: center;
+    display: grid;
+
+    // animacion con keyframes
+    //nombre de la animacion, tipo, tiempo
+    animation: fadeIn ease-in 0.5s;
+
+    &.fade-out{
+    animation: fadeOut ease-in 0.5s;
+
+    }
+
+    img{
+        max-width: 100rem;
+    }
+}
+
+.btn-cerrar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: v.$blanco;
+    border: none;
+    color: v.$negro;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+//permite definir una linea de tiempo con puro codigo css
+@keyframes fadeIn{
+    //cuando inicia
+    0%{
+        opacity: 0;
+    }
+    //cuando finaliza esta animacion
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    //cuando inicia
+    0%{
+        opacity: 1;
+    }
+    //cuando finaliza esta animacion
+    100%{
+        opacity: 0;
+    }
+}

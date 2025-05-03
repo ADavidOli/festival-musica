@@ -18,6 +18,10 @@ body {
     font-style: normal;
     color: v.$negro;
     font-size: 2rem;
+    // esta clase evita que todo lo que este fuera de un modal haga y se pueda hacer scroll
+    &.overflow-hidden{
+        overflow: hidden;
+    }
 }
 p {
     color: v.$negro;

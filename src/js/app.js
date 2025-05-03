@@ -1,0 +1,2 @@
+import './modules/galeria.js';
+import './modules/navegation.js';
