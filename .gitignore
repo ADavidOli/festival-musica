@@ -1,1 +1,8 @@
-notas.txt
+#ignoramos modules para hacer el deployment
+# instalamos las dependencias.
+#  gulp-concat@2.6.1
+#  gulp-sass@6.0.1
+#  gulp@5.0.0
+#  sass@1.87.0
+
+/node_modules/
