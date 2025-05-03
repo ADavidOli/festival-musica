@@ -5,4 +5,4 @@
 #  gulp@5.0.0
 #  sass@1.87.0
 
-/node_modules/
+node_modules/
