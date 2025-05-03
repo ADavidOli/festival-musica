@@ -42,5 +42,7 @@ exports.dev = dev;
 parallel lo que hace es inicar todaas al mismo tiempo para que despues lo finalice
 importa mucho el orden en el que se pasa las funciones
 */
-exports.default = series(js, css, dev);
+exports.default = series(js, css, dev); //este comando es para desarrollo
+exports.build = series(js, css); //este comando es para produccion
+
 
