@@ -25,6 +25,7 @@
     "build": "gulp build"
   },
   "devDependencies": {
+    "glop": "^0.3.1",
     "gulp": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^5.0.0",
@@ -33,6 +34,7 @@
     "sass": "^1.87.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "sharp": "^0.34.1"
   }
 }

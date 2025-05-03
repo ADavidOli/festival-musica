@@ -7,12 +7,12 @@ function CrearGaleria(){
     const galeria = document.querySelector('.galeria-imagenes')
     const cantidadImagenes= 16;
     for (let i = 1; i<=cantidadImagenes; i++){
-        const imagen = document.createElement('IMG')
-        imagen.loading = "lazy"
-        imagen.width = "300"
-        imagen.height = "200"
-        imagen.src = `img/gallery/full/${i}.jpg`
-        imagen.alt = 'Imagen de Galeria'
+        const imagen = document.createElement('PICTURE')
+        imagen.innerHTML = `
+        <source srcset="img/gallery/thumb/${i}.avif" type="image/avif">
+        <source srcset="img/gallery/thumb/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="img/gallery/thumb/${i}.jpg" alt="imagen galeria">
+    `;
        
 
         //Event Handler->el proceso de detectar y responder el estado del usuario
@@ -26,9 +26,13 @@ function CrearGaleria(){
 
 function mostrarImagen(i){
     //cargamos imagenes
-    const imagen = document.createElement('IMG')
-    imagen.src = `img/gallery/full/${i}.jpg`
-    imagen.alt = 'Imagen de Galeria'
+    const imagen = document.createElement('PICTURE')
+    imagen.innerHTML = `
+        <source srcset="img/gallery/full/${i}.avif" type="image/avif">
+        <source srcset="img/gallery/full/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="img/gallery/full/${i}.jpg" alt="imagen galeria">
+    `;
+       
     // generar modal
     const modal = document.createElement('DIV');
     modal.classList.add('modal');
